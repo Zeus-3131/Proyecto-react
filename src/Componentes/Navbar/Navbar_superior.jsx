@@ -7,8 +7,8 @@ function Navbar_superior() {
       <div className='contenNavbar'> 
         <div className='NavbarCuenta'>
           <ul>
-          <li>my cuenta</li>
-          <li>favoritos</li>
+          <li>MI CUENTA</li>
+          <li>FAVORITOS</li>
           </ul>
         </div>
         <div className='NavbarParrafo'>
@@ -16,7 +16,7 @@ function Navbar_superior() {
           </div>
         <div className='NavbarCarrito'>
           <ul>
-          <li className='carrito'>carrito</li>
+          <li className='carrito'>CARRITO</li>
           </ul>
         </div>
       </div>
