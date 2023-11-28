@@ -4,15 +4,21 @@ import './Navbar_superior.css';
 function Navbar_superior() {
   return (
     <header>
-      <div>
-        <ul>
+      <div className='contenNavbar'> 
+        <div className='NavbarCuenta'>
+          <ul>
           <li>my cuenta</li>
           <li>favoritos</li>
-          <li>oferta</li>
-          <li>oferta2</li>
-          <li>oferta3</li>
-          <li>carrito</li>
-        </ul>
+          </ul>
+        </div>
+        <div className='NavbarParrafo'>
+          <p>FREE U.S. SHIPPING $98+ &nbsp;|&nbsp; FREE RETURNS &nbsp;|&nbsp; BEST PRICE GUARANTEED</p>
+          </div>
+        <div className='NavbarCarrito'>
+          <ul>
+          <li className='carrito'>carrito</li>
+          </ul>
+        </div>
       </div>
     </header>
   );
