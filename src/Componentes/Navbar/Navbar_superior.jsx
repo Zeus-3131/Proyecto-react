@@ -1,4 +1,7 @@
 import './Navbar_superior.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCartArrowDown } from '@fortawesome/free-solid-svg-icons';
+
 
 
 function Navbar_superior() {
@@ -16,7 +19,7 @@ function Navbar_superior() {
           </div>
         <div className='NavbarCarrito'>
           <ul>
-          <li className='carrito'>CARRITO</li>
+          <li><FontAwesomeIcon className='carrito' bounce size="sm" icon={faCartArrowDown} />3</li>
           </ul>
         </div>
       </div>

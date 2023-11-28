@@ -18,7 +18,7 @@ li{
 }
 
 li:hover{
-    color: rgba(179, 172, 172, 0.500);
+    color: rgba(179, 172, 172, 0.900);
 }
 
 ul{
@@ -50,3 +50,6 @@ p{
     width: 25%;
 }
 
+.carrito{
+    height: 15px;
+}
