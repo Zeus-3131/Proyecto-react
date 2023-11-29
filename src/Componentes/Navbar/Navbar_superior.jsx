@@ -1,10 +1,10 @@
-import './Navbar_superior.css';
+import './Navbar_Superior.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartArrowDown } from '@fortawesome/free-solid-svg-icons';
 
 
 
-function Navbar_superior() {
+function Navbar_Superior() {
   return (
     <header>
       <div className='contenNavbar'> 
@@ -27,4 +27,4 @@ function Navbar_superior() {
   );
 }
 
-export default Navbar_superior
+export default Navbar_Superior
