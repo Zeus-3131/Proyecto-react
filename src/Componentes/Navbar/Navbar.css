@@ -1,0 +1,38 @@
+.contenedorNavbar{
+    background: rgba(255,255,255,.9);
+    height: 44px;
+    display: flex;
+    align-items: center;
+
+}
+
+.contenidoNav{
+    margin-right: auto;
+    margin-left: auto;
+    width: 1170px;
+}
+
+.nav{
+
+}
+
+.ulnav{
+    text-align: left;
+}
+
+.linav{
+
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+    font-size: 12px;
+
+}
+
+.anav{
+   text-decoration: none;
+   font: 16px/1.5em Montserrat;
+   font-weight: 500;
+   margin: 0 10px 0 32px ;
+   color: #000;
+}
