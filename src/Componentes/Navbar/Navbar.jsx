@@ -12,12 +12,12 @@ const Navbar = () => {
           <div className="contenidoNav">
             <nav className="nav">
               <ul className="ulnav">
-                <li className="linav"><a className="anav" href="#">Inicio</a></li>
-                <li className="linav"><a className="anav" href="#">Tienda</a></li>
-                <li className="linav"><a className="anav" href="#">Hombre</a></li>
-                <li className="linav"><a className="anav" href="#">Top Productos</a></li>
-                <li className="linav"><a className="anav" href="#">Mujer</a></li>
-                <li className="linav"><a className="anav" href="#">Blogs</a></li>
+                <li className="linav"><a className="anav"  href="#">Inicio</a></li>
+                <li className="linav"><a className="anav"  href="#">Tienda</a></li>
+                <li className="linav"><a className="anav"  href="#">Hombre</a></li>
+                <li className="linav"><a className="anav"  href="#">Top Productos</a></li>
+                <li className="linav"><a className="anav"  href="#">Mujer</a></li>
+                <li className="linav"><a className="anav"  href="#">Blogs</a></li>
               </ul>
             </nav>
           </div>
