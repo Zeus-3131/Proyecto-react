@@ -25,12 +25,10 @@
     margin: 0;
     font-size: 12px;
 
-}
+    text-decoration: none;
+    font: 16px/1.5em Montserrat;
+    font-weight: 500;
+    margin: 0 10px 0 32px ;
+    color: #000;
 
-.anav{
-   text-decoration: none;
-   font: 16px/1.5em Montserrat;
-   font-weight: 500;
-   margin: 0 10px 0 32px ;
-   color: #000;
 }
