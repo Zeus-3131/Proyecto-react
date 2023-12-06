@@ -27,7 +27,7 @@ section{
     margin: 0 5px; 
 }
 
-.contenidoSeccion2{
+.contenidoSeccion-1{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,3 +50,62 @@ section{
     color: white;
     background-color: red;
 }
+
+.contenidoSeccion2{
+    height: 558spx;
+    background-color: lightseagreen;
+}
+
+.conteSeccion2{
+    overflow: hidden;
+    width: 779px;
+    height: 510px;
+    padding-left: 20px;
+    padding-top: 30px;
+}
+
+.promocion1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/* .contenedorpromo{
+    width: 600px;
+    height: 300px;
+} */
+
+.imgpromo1{
+    width: 100%;
+    height: 100%;
+    transition: transform 5s;
+    
+}
+
+.imgpromo1:hover {
+    transform: scale(1.1);
+  }
+
+  .textpromo{
+    position: absolute;
+    /* top: 0%;
+    bottom: 0; */
+    display: flex;
+    align-items: center;
+    left: 25%;
+    text-align: center;
+  }
+
+  .promoh{
+    color: white;
+    margin-bottom: 40px;
+    font-size: 1.5em;
+  }
+
+
+  .promoh5{
+    color: red;
+    font-size: 2.7em;
+  }
