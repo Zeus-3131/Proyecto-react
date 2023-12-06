@@ -17,13 +17,36 @@ section{
 }
 
 .contenidoSeccion1{
+    /* font-size: calc(var(--font-size-base) * 1px); */
+    line-height: 1.5;
+    letter-spacing: .3px;
+    font-size: xx-large;
+    padding: 50px 50px 50px 50px;
+    margin: 40px auto !important;
     flex: 1; 
     margin: 0 5px; 
-    /* position: relative; */
 }
 
-.contenedorSection-1{
-    /* flex: 1;  */
+.contenidoSeccion2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1; 
     margin: 0 5px; 
-    position: relative;
+    padding: 50px 50px 50px 50px;
+    margin: 40px auto !important;
+}
+
+.pSecccion1{
+    text-align: left;
+}
+
+.botonSeccion1{
+    width: 160px;
+    height: 50px;
+    border-radius: 12px;
+    border-color: 1px solid white;
+    cursor: pointer;
+    color: white;
+    background-color: red;
 }
