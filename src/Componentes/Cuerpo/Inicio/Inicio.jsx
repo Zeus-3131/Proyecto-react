@@ -1,4 +1,5 @@
 import "./Inicio.css";
+import TarjetaCompra from "../TarjetaCompra/TarjetaCompra";
 
 const Inicio = () => {
     return (
@@ -19,19 +20,24 @@ const Inicio = () => {
 
             <section className="contenidoSeccion2">
                 <div className="conteSeccion2">
-                        <div className="contenedorpromo">
-                            <div className="promocion1">
-                                <img className="imgpromo1" src="https://tabbase.myshopify.com/cdn/shop/files/1_5.jpg?v=1650439204" alt="zapatillas negras " />
-                                <div className="textpromo">
-                                    <div>
-                                        <h2 className="promoh">Las mejores colecciones</h2>
-                                        <h4 className="promoh">Colección de zapatos de cuero</h4>
-                                        <h5 className="promoh5"><strong>50% de descuento</strong></h5>
-                                    </div>
+                    <div className="contenedorpromo">
+                        <div className="promocion1">
+                            <img className="imgpromo1" src="https://tabbase.myshopify.com/cdn/shop/files/1_5.jpg?v=1650439204" alt="zapatillas negras " />
+                            <div className="textpromo">
+                                <div>
+                                    <h2 className="promoh">Las mejores colecciones</h2>
+                                    <h4 className="promoh">Colección de zapatos de cuero</h4>
+                                    <h5 className="promoh5"><strong>50% de descuento</strong></h5>
                                 </div>
                             </div>
                         </div>
-                    <div>
+                    </div>
+                    <div className="mitadSeccion2">
+                        <h2 className="seccion2H">Productos mejor valorados</h2>
+                        <div className="tarjetas">
+                            <TarjetaCompra />
+                            {/* <TarjetaCompra /> */}
+                        </div>
 
                     </div>
                 </div>

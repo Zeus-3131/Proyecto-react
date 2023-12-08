@@ -51,17 +51,24 @@ section{
     background-color: red;
 }
 
-.contenidoSeccion2{
-    height: 558spx;
-    background-color: lightseagreen;
-}
+
+/* estilos de la seccion 2 */
 
 .conteSeccion2{
+    display: flex;
+    flex-direction: row;
     overflow: hidden;
     width: 779px;
     height: 510px;
     padding-left: 20px;
     padding-top: 30px;
+}
+
+.contenidoSeccion2{
+    display: flex;
+    align-items: center;
+    height: 558px;
+    background-color: lightseagreen;
 }
 
 .promocion1{
@@ -72,11 +79,6 @@ section{
     overflow: hidden;
 }
 
-/* .contenedorpromo{
-    width: 600px;
-    height: 300px;
-} */
-
 .imgpromo1{
     width: 100%;
     height: 100%;
@@ -85,17 +87,19 @@ section{
 }
 
 .imgpromo1:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
   }
 
   .textpromo{
-    position: absolute;
-    /* top: 0%;
-    bottom: 0; */
+    position: absolute; 
     display: flex;
     align-items: center;
     left: 25%;
     text-align: center;
+    /* top: 0%;
+    bottom: 0;
+    /* flex: 1; */
+
   }
 
   .promoh{
@@ -108,4 +112,27 @@ section{
   .promoh5{
     color: red;
     font-size: 2.7em;
+  }
+
+  /* estilos de la parte derecha de la segunda seccion  */
+
+  .mitadSeccion2{
+    width: 510px;
+    height: 498px;
+    background: lightgreen;
+    margin: 0 20px;
+    position: absolute;
+    left: 59%;
+  }
+
+  .seccion2H{
+    text-align: left;
+    padding: 0;
+    margin: 0;
+  }
+
+  .tarjetas{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
   }
