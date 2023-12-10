@@ -36,7 +36,7 @@ const Inicio = () => {
                         <h2 className="seccion2H">Productos mejor valorados</h2>
                         <div className="tarjetas">
                             <TarjetaCompra />
-                            {/* <TarjetaCompra /> */}
+                            <TarjetaCompra />
                         </div>
 
                     </div>

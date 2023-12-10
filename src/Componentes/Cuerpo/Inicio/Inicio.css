@@ -68,7 +68,7 @@ section{
     display: flex;
     align-items: center;
     height: 558px;
-    background-color: lightseagreen;
+    background-color: white;
 }
 
 .promocion1{
@@ -119,10 +119,11 @@ section{
   .mitadSeccion2{
     width: 510px;
     height: 498px;
-    background: lightgreen;
+    background: white;
     margin: 0 20px;
     position: absolute;
     left: 59%;
+    z-index:1 !important;
   }
 
   .seccion2H{
