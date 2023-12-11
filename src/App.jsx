@@ -9,7 +9,7 @@ function App() {
     <div>
     <Navbar/>
     <Inicio/>
-    <ItemListContainer greeting="Hola mundo"/>
+    {/* <ItemListContainer greeting="Hola mundo"/> */}
     </div>
   );
 
