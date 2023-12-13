@@ -5,6 +5,7 @@ const Inicio = () => {
     return (
 
         <>
+        {/* primera seccion  */}
             <section className="contenedorSection1">
                 <div className="contenidoSeccion1">
                     <h1>La mejor<br />Coleccion del <b style={{ color: "red" }}>2024</b></h1>
@@ -18,6 +19,7 @@ const Inicio = () => {
                 </div>
             </section>
 
+        {/* segunda seccion   */}
             <section className="contenidoSeccion2">
                 <div className="conteSeccion2">
                     <div className="contenedorpromo">
@@ -38,10 +40,38 @@ const Inicio = () => {
                             <TarjetaCompra />
                             <TarjetaCompra />
                         </div>
-
                     </div>
                 </div>
             </section>
+
+        {/* tercera seccion  */}
+        <section className="contenedorSeccion3">
+            <div className="contenidoSeccion3">
+                <div className="contenInfo3">
+                    <div className="contenInf3">
+                        <div className="info3">
+                            <a className="aInfo3" href="#">
+                                <img src="https://tabbase.myshopify.com/cdn/shop/files/3_1.jpg?v=1649851424" alt="zapatllas nike ordenasas en fila" className=" imgInfo3" width="1890" height="500" />
+                            </a>
+                        </div>
+                        <div className="contentText3">
+                            <div className="contenText3">
+                                <div>
+                                    <h2 className="hText3">Las mejores colecciones</h2>
+                                    <h4 className="h4Text3">Las mejores colecciones en todo tipo de zapatillas </h4>
+                                    <a className="aText3" href="#">Descubre mas</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+        </section>
         </>
 
     )
