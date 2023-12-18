@@ -1,5 +1,6 @@
 import './Navbar_Superior.css';
-import CartWidget from '../CartWidget/CartWidget';
+import CartWidget from '../Aditamentos/CartWidget/CartWidget.jsx';
+
 
 
 

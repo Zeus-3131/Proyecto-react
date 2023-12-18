@@ -1,14 +1,32 @@
 import ItemListContainer from "./Componentes/ItemListContainer/ItemListContainer";
-import Navbar from "./Componentes/Navbar/Navbar";
-import Inicio from "./Componentes/Cuerpo/Inicio/Inicio.jsx";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+// import Navbar from "../Componentes/Navbar/Navbar.jsx";
+import Inicio from "./Componentes/Paginas/Inicio/Inicio";
+import Tienda from "./Componentes/Paginas/Tienda/Tienda";
+import Hombre from "./Componentes/Paginas/Hombre/Hombre";
+import Productos from "./Componentes/Paginas/Productos/Productos";
+import Mujer from "./Componentes/Paginas/Mujer/Mujer";
+import Blogs from "./Componentes/Paginas/Blogs/Blogs";
 
 
 
 function App() {
   return (
     <div>
-    <Navbar/>
-    <Inicio/>
+      <BrowserRouter>
+      <Routes>
+        <Route path="/Tienda" element={<Tienda/>}/>
+        <Route path="/Hombre" element={<Hombre/>}/>
+        <Route path="/Productos" element={<Productos/>}/>
+        <Route path="/Mujer" element={<Mujer/>}/>
+        <Route path="/Blogs" element={<Blogs/>}/>
+        <Route path="/" element={<Inicio/>}/>
+        <Route path="*" element={<img src="https://b97-719386.smushcdn.com/719386/wp-content/uploads/2021/05/Enmascarar-grupo-48.png?lossy=1&strip=1&webp=1" alt="Error 404" width={"100%"} height={"100%"} style={{margin:"0" }}/>}/>
+      </Routes>
+      </BrowserRouter>
+
+    {/* <Navbar/> */}
+    {/* <Inicio/> */}
     {/* <ItemListContainer greeting="Hola mundo"/> */}
     </div>
   );

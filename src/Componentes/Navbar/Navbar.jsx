@@ -1,6 +1,7 @@
 import Navbar_Superior from "./Navbar_superior";
 import Navbar_Intermedio from "./Navbar_Intermedio";
 import "./Navbar.css";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -12,8 +13,8 @@ const Navbar = () => {
           <div className="contenidoNav">
             <nav className="nav">
               <ul className="ulnav">
-                <li className="linav">Inicio</li>
-                <li className="linav">Tienda
+                <li className="linav"><NavLink to="/">Inicio</NavLink></li>
+                <li className="linav"><NavLink to="/Tienda">Tienda</NavLink>
                 
                 {/* <ul id="menu1">
                   <li>
@@ -28,10 +29,10 @@ const Navbar = () => {
                 </ul> */}
                 
                 </li>
-                <li className="linav">Hombre</li>
-                <li className="linav">Top Productos</li>
-                <li className="linav">Mujer</li>
-                <li className="linav">Blogs</li>
+                <li className="linav"><NavLink to="/Hombre">Hombre</NavLink></li>
+                <li className="linav"><NavLink to="/Productos">Top Productos</NavLink></li>
+                <li className="linav"><NavLink to="/Mujer">Mujer</NavLink></li>
+                <li className="linav"><NavLink to="/BLogs">Blogs</NavLink></li>
               </ul>
             </nav>
           </div>
