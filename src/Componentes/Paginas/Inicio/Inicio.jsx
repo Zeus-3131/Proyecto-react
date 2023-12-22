@@ -1,13 +1,15 @@
 import "./Inicio.css";
 import Navbar from "../../Navbar/Navbar";
 import TarjetaCompra from "../../Aditamentos/TarjetaCompra/TarjetaCompra";
+import TarjetaComprasAmplia from "../../Aditamentos/TarjetaComprasAmplia/TarjetaComprasAmplia";
+import Footer from "../../Footer/Footer";
 
 
 
 const Inicio = () => {
-    return ( 
+    return (
         <>
-        <Navbar/>
+            <Navbar />
             {/* primera seccion  */}
             <section className="contenedorSection1">
                 <div className="contenidoSeccion1">
@@ -40,8 +42,8 @@ const Inicio = () => {
                     <div className="mitadSeccion2">
                         <h2 className="seccion2H">Productos mejor valorados</h2>
                         <div className="tarjetas">
-                            <TarjetaCompra />
-                            <TarjetaCompra />
+                            <TarjetaCompra imagen="https://assets.codepen.io/4164355/shoes.png" titulo="Nike Shoes" />
+                            <TarjetaCompra imagen="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1693817051-infinityrn-4-zapatillas-de-running-asfalto-TvSrh4.png?crop=1.00xw:0.802xh;0,0.198xh&resize=980:*" titulo="Nike Shoes" />
                         </div>
                     </div>
                 </div>
@@ -66,20 +68,7 @@ const Inicio = () => {
                                     </div>
                                 </div>
 
-                                {/* <div className="contenPromoSeccion3">
-                                    <div className="contenPromo3">
-                                        <div className="promo1Seccion3">
-                                            <div className="promo1">
-                                              <ul>
 
-                                              </ul>
-                                            </div>
-                                        </div>
-                                        <div className="promo2Seccion3">
-
-                                        </div>
-                                    </div>
-                                </div> */}
 
                                 <ul className="contenBanner">
                                     <li className="banner">
@@ -90,7 +79,7 @@ const Inicio = () => {
                                                 <h3 className="h3Banner">Colección de hombre</h3>
                                                 <div className="divBanner">
                                                     <button className="botonBanner">
-                                                    comprar ahora
+                                                        comprar ahora
                                                     </button>
                                                 </div>
                                             </div>
@@ -104,7 +93,7 @@ const Inicio = () => {
                                                 <h3 className="h3Banner">Colección de Mujer</h3>
                                                 <div className="divBanner">
                                                     <button className="botonBanner">
-                                                    comprar ahora
+                                                        comprar ahora
                                                     </button>
                                                 </div>
                                             </div>
@@ -118,7 +107,7 @@ const Inicio = () => {
                                                 <h3 className="h3Banner">Colección de Niños</h3>
                                                 <div className="divBanner">
                                                     <button className="botonBanner">
-                                                    comprar ahora
+                                                        comprar ahora
                                                     </button>
                                                 </div>
                                             </div>
@@ -130,10 +119,73 @@ const Inicio = () => {
                         </div>
                     </div>
 
-
+                    {/* <TarjetaComprasAmplia/>
+                    <TarjetaComprasAmplia/> */}
                 </div>
-
             </section>
+
+
+            {/* cuarta seccion  */}
+            <section>
+                <div className="contenedorSeccion4">
+                    <div className="fondoSeccion4">
+                        <div className="contenSeccion4">
+                            <h2 className="h2Seccion4">
+                                <span>
+                                    <b>Colección especial </b>
+                                    de zapatos
+                                </span>
+                            </h2>
+                            <div className="contenInfo4">
+                                <TarjetaComprasAmplia />
+                                <TarjetaComprasAmplia />
+                                <TarjetaComprasAmplia />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* quinta seccion  */}
+            <section>
+                <div className="slideshow-container">
+                    <div className="images">
+                        <div className="image">
+                            <img src="./reebok.png" alt="Imagen 1" />
+                        </div>
+                        <div className="image">
+                            <img src="./adidas.png" alt="Imagen 2" />
+                        </div>
+                        <div className="image">
+                            <img src="./puma.png" />
+                        </div>
+                        <div className="image">
+                            <img src="./jordan.png" />
+                        </div>
+                        <div className="image">
+                            <img src="./converse.png" />
+                        </div>
+                        <div className="image">
+                            <img src="./le.png" />
+                        </div>
+                        <div className="image">
+                            <img src="./balance.png" />
+                        </div>
+                        <div className="image">
+                            <img src="./skech.png" />
+                        </div>
+                        <div className="image">
+                            <img src="./nike.png" />
+                        </div>
+                        <div className="image">
+                            <img src="./lacos.png" />
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <Footer/>
         </>
 
     )
