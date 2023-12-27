@@ -13,8 +13,8 @@ const Navbar = () => {
           <div className="contenidoNav">
             <nav className="nav">
               <ul className="ulnav">
-                <li className="linav"><NavLink to="/">Inicio</NavLink></li>
-                <li className="linav"><NavLink to="/Tienda">Tienda</NavLink>
+                <li className="linav"><NavLink className="linav2" to="/">Inicio</NavLink></li>
+                <li className="linav"><NavLink className="linav2" to="/Tienda">Tienda</NavLink>
                 
                 {/* <ul id="menu1">
                   <li>
@@ -29,10 +29,10 @@ const Navbar = () => {
                 </ul> */}
                 
                 </li>
-                <li className="linav"><NavLink to="/Hombre">Hombre</NavLink></li>
-                <li className="linav"><NavLink to="/Productos">Top Productos</NavLink></li>
-                <li className="linav"><NavLink to="/Mujer">Mujer</NavLink></li>
-                <li className="linav"><NavLink to="/BLogs">Blogs</NavLink></li>
+                <li className="linav"><NavLink className="linav2" to="/Hombre">Hombre</NavLink></li>
+                <li className="linav"><NavLink className="linav2" to="/Productos">Top Productos</NavLink></li>
+                <li className="linav"><NavLink className="linav2" to="/Mujer">Mujer</NavLink></li>
+                <li className="linav"><NavLink className="linav2" to="/BLogs">Blogs</NavLink></li>
               </ul>
             </nav>
           </div>

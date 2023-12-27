@@ -24,7 +24,7 @@
 }
 
 .linav{
-
+    
     list-style: none;
     display: inline-block;
     margin: 0;
@@ -35,6 +35,10 @@
     font-weight: 500;
     margin: 0 10px 0 32px ;
     color: #000;
+}
+
+.linav2{
+    text-decoration: none;
 }
 
 /* estilos para el esquema o desplegables del navbar  */
