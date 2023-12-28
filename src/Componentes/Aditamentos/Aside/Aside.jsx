@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { NavLink } from 'react-router-dom';
 import './Aside.css';
 
 const Aside = () => {
@@ -45,6 +46,20 @@ const Aside = () => {
                     <span className="limpiar-seccion" data-target="en_stock">Limpiar</span>
                     <li><label><input type="checkbox" value="en_stock" /> En stock</label></li>
                     <li><label><input type="checkbox" value="agotado" /> Agotado</label></li>
+                </ul>
+
+            </div>
+
+            <div className="filtro-seccion" data-target="precio">
+                <h3 className="seccion-titulo">Marca <span className="flecha"><i class="fa fa-angle-right" /></span></h3>
+                <ul className="estilos-filtro">
+                    <span className="limpiar-seccion" data-target="precio">Limpiar</span>
+                    <li><label><NavLink to="categoria/1"><input type="checkbox" value="Nike" /></NavLink> Nike </label></li>
+                    <li><label><NavLink to="categoria/2"><input type="checkbox" value="Puma" /></NavLink> Puma</label></li>
+                    <li><label><NavLink to="categoria/3"><input type="checkbox" value="Conver" /></NavLink> Conver</label></li>
+                    <li><label><NavLink to="categoria/4"><input type="checkbox" value="Lacose" /></NavLink> Lacose</label></li>
+                    <li><label><NavLink to="categoria/5"><input type="checkbox" value="Adidas" /></NavLink> Adidas</label></li>
+                    <li><label><NavLink to="categoria/6"><input type="checkbox" value="Rebook" /></NavLink> Rebook</label></li>
                 </ul>
 
             </div>
