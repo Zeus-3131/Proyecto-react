@@ -1,6 +1,6 @@
 import "./TarjetaCompra.css"
 
-const TarjetaCompra = ({imagen, titulo}) => {
+const TarjetaCompra = ({ imagen, titulo }) => {
     return (
         <div className="contenedorTarjeta">
             <div>
@@ -11,7 +11,7 @@ const TarjetaCompra = ({imagen, titulo}) => {
                                 <div className="container">
                                     <div className="card">
                                         <div className="imgBx">
-                                            <img src={imagen} alt={titulo}/>
+                                            <img src={imagen} alt={titulo} />
                                         </div>
                                         <div className="contentBx">
                                             <h2>{titulo}</h2>
@@ -27,6 +27,9 @@ const TarjetaCompra = ({imagen, titulo}) => {
                                                 <span></span>
                                                 <span></span>
                                                 <span></span>
+                                            </div>
+                                            <div className="size contenInfo"> 
+                                                <h3>Precio : 6544</h3>
                                             </div>
                                             <a className="contenInfo" href="#">Buy Now</a>
                                         </div>

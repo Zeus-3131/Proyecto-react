@@ -9,9 +9,6 @@ import Mujer from "./Componentes/Paginas/Mujer/Mujer";
 import Blogs from "./Componentes/Paginas/Blogs/Blogs";
 
 
-
-
-
 function App() {
   return (
     <div>

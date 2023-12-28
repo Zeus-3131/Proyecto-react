@@ -38,58 +38,59 @@ const Aside = () => {
     }, []);
 
     return (
-        <aside>
-            <h2>Filtrar por:</h2>
-
+        <aside className='contenedorAside'>
             <div className="filtro-seccion" data-target="en_stock">
-                <h3 className="seccion-titulo">Disponibilidad <span className="flecha"></span></h3>
+                <h3 className="seccion-titulo">Disponibilidad <span className="flecha"><i class="fa fa-angle-right" /></span></h3>
                 <ul className="estilos-filtro">
+                    <span className="limpiar-seccion" data-target="en_stock">Limpiar</span>
                     <li><label><input type="checkbox" value="en_stock" /> En stock</label></li>
                     <li><label><input type="checkbox" value="agotado" /> Agotado</label></li>
                 </ul>
-                <button className="limpiar-seccion" data-target="en_stock">Limpiar</button>
+
             </div>
 
             <div className="filtro-seccion" data-target="precio">
-                <h3 className="seccion-titulo">Precio <span className="flecha">▶</span></h3>
+                <h3 className="seccion-titulo">Precio <span className="flecha"><i class="fa fa-angle-right" /></span></h3>
                 <ul className="estilos-filtro">
+                    <span className="limpiar-seccion" data-target="precio">Limpiar</span>
                     <li><label><input type="checkbox" value="menos_50" /> Menos de $50</label></li>
                     <li><label><input type="checkbox" value="50_100" /> $50 - $100</label></li>
                 </ul>
-                <button className="limpiar-seccion" data-target="precio">Limpiar</button>
+
             </div>
 
-            {/* Repetir para los demás filtros */}
-
             <div className="filtro-seccion" data-target="tipo_producto">
-                <h3 className="seccion-titulo">Tipo de Producto <span className="flecha">▶</span></h3>
+                <h3 className="seccion-titulo">Tipo de Producto <span className="flecha"><i class="fa fa-angle-right" /></span></h3>
                 <ul className="estilos-filtro">
+                    <span className="limpiar-seccion" data-target="tipo_producto">Limpiar</span>
                     <li><label><input type="checkbox" value="zapatillas" /> Zapatillas</label></li>
                     <li><label><input type="checkbox" value="tenis" /> Tenis</label></li>
                 </ul>
-                <button className="limpiar-seccion" data-target="tipo_producto">Limpiar</button>
+
             </div>
 
             <div className="filtro-seccion" data-target="color">
-                <h3 className="seccion-titulo">Color <span className="flecha">▶</span></h3>
+                <h3 className="seccion-titulo">Color <span className="flecha"><i class="fa fa-angle-right" /></span></h3>
                 <ul className="estilos-filtro">
+                    <span className="limpiar-seccion" data-target="color">Limpiar</span>
                     <li><label><input type="checkbox" value="rojo" /> Rojo</label></li>
                     <li><label><input type="checkbox" value="azul" /> Azul</label></li>
                     <li><label><input type="checkbox" value="negro" /> Negro</label></li>
                     <li><label><input type="checkbox" value="blanco" /> Blanco</label></li>
                 </ul>
-                <button className="limpiar-seccion" data-target="color">Limpiar</button>
+
             </div>
 
             <div className="filtro-seccion" data-target="tamaño">
-                <h3 className="seccion-titulo">Tamaño <span className="flecha">▶</span></h3>
+                <h3 className="seccion-titulo">Tamaño <span className="flecha"><i class="fa fa-angle-right" /></span></h3>
                 <ul className="estilos-filtro">
+                    <span className="limpiar-seccion" data-target="tamaño">Limpiar</span>
                     <li><label><input type="checkbox" value="35" /> 35</label></li>
                     <li><label><input type="checkbox" value="36" /> 36</label></li>
                     <li><label><input type="checkbox" value="37" /> 37</label></li>
                     <li><label><input type="checkbox" value="38" /> 38</label></li>
                 </ul>
-                <button className="limpiar-seccion" data-target="tamaño">Limpiar</button>
+
             </div>
         </aside>
     );
