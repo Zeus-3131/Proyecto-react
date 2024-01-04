@@ -38,31 +38,15 @@ const Productos = () => {
               <header>
                 <nav>
                   <ul>
-                    <NavLink to="/productos">inicio</NavLink><br />
+                    <NavLink to="/Productos">inicio</NavLink><br />
                     <NavLink to="/categoria/2">puma</NavLink><br />
                     <NavLink to="/categoria/1">nike</NavLink>
                   </ul>
                 </nav>
               </header>
             </div>
-            {/* <header>
-              <h3>header provisional</h3>
-              <BrowserRouter>
-                <Routes>
-                  <Route path="/productos" element={<ItemListContainer />} />
-                  <Route
-                    path="/categoria/:idCategoria"
-                    element={<ItemListContainer />}
-                  />
-                  <Route
-                    path="/categoria/:idItem"
-                    element={<ItemDetailContainer />}
-                  />
-                </Routes>
-              </BrowserRouter>
-            </header> */}
-            <br /><br /><br />
-            <ItemListContainer />
+            {/* <ItemListContainer /> */}
+            <ItemListContainer showNavbar={false} showAside={false} showFooter={false} />
           </div>
         </div>
       </main>

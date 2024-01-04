@@ -24,7 +24,7 @@ function App() {
         <Route path="*" element={<img src="https://b97-719386.smushcdn.com/719386/wp-content/uploads/2021/05/Enmascarar-grupo-48.png?lossy=1&strip=1&webp=1" alt="Error 404" width={"100%"} height={"100%"} style={{margin:"0" }}/>}/>
 
         {/* rutas de los productos  */}
-        <Route path="/productos" element={<ItemListContainer/>}/>
+        <Route path="/Productos" element={<ItemListContainer/>}/>
         <Route path="/categoria/:idCategoria" element={<ItemListContainer/>}/>
         <Route path="/categoria/:idItem" element={<ItemDetailContainer/>}/>
       </Routes>
