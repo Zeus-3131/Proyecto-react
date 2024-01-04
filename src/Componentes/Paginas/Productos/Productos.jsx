@@ -39,8 +39,8 @@ const Productos = () => {
                 <nav>
                   <ul>
                     <NavLink to="/productos">inicio</NavLink><br />
-                    <NavLink to="/categoria/:idCategoria">puma</NavLink><br />
-                    <NavLink to="/categoria/:idItem">nike</NavLink>
+                    <NavLink to="/categoria/2">puma</NavLink><br />
+                    <NavLink to="/categoria/1">nike</NavLink>
                   </ul>
                 </nav>
               </header>
