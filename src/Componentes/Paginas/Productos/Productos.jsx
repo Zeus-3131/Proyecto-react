@@ -9,8 +9,8 @@ import Footer from "../../Footer/Footer";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ItemDetailContainer from "../../ItemDetailContainer/ItemDetailContainer";
 
-
 const Productos = () => {
+  const componentesDelItemListContainer=false;
   return (
     <>
       <Navbar />
@@ -38,21 +38,21 @@ const Productos = () => {
               <header>
                 <nav>
                   <ul>
-                    <NavLink to="/Productos">inicio</NavLink><br />
-                    <NavLink to="/categoria/2">puma</NavLink><br />
+                    <NavLink to="/Productos">inicio</NavLink>
+                    <br />
+                    <NavLink to="/categoria/2">puma</NavLink>
+                    <br />
                     <NavLink to="/categoria/1">nike</NavLink>
                   </ul>
                 </nav>
               </header>
             </div>
-            {/* <ItemListContainer /> */}
-            <ItemListContainer showNavbar={false} showAside={false} showFooter={false} />
+            <ItemListContainer mostrarComponentes={componentesDelItemListContainer} />
           </div>
         </div>
       </main>
 
       <Footer />
-      {/* <h1>productos online</h1> */}
     </>
   );
 };
