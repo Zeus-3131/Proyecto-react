@@ -54,12 +54,12 @@ const Aside = () => {
                 <h3 className="seccion-titulo">Marca <span className="flecha"><i class="fa fa-angle-right" /></span></h3>
                 <ul className="estilos-filtro">
                     <span className="limpiar-seccion" data-target="precio">Limpiar</span>
-                    <li><label><NavLink to="/categoria/1"><input type="checkbox" value="Nike" /> Nike</NavLink> </label></li>
-                    <li><label><NavLink to="/categoria/2"><input type="checkbox" value="Puma" /> Puma</NavLink></label></li>
-                    <li><label><NavLink to="/categoria/3"><input type="checkbox" value="Conver" /> Conver</NavLink></label></li>
-                    <li><label><NavLink to="/categoria/4"><input type="checkbox" value="Lacose" /> Lacose</NavLink></label></li>
-                    <li><label><NavLink to="/categoria/5"><input type="checkbox" value="Adidas" /> Adidas</NavLink></label></li>
-                    <li><label><NavLink to="/categoria/6"><input type="checkbox" value="Rebook" /> Rebook</NavLink></label></li>
+                    <li><label><NavLink style={{textDecoration:"none"}} to="/categoria/1"><input type="checkbox" value="Nike" /> Nike</NavLink> </label></li>
+                    <li><label><NavLink style={{textDecoration:"none"}} to="/categoria/2"><input type="checkbox" value="Puma" /> Puma</NavLink></label></li>
+                    <li><label><NavLink style={{textDecoration:"none"}} to="/categoria/3"><input type="checkbox" value="Conver" /> Conver</NavLink></label></li>
+                    <li><label><NavLink style={{textDecoration:"none"}} to="/categoria/4"><input type="checkbox" value="Lacose" /> Lacose</NavLink></label></li>
+                    <li><label><NavLink style={{textDecoration:"none"}} to="/categoria/5"><input type="checkbox" value="Adidas" /> Adidas</NavLink></label></li>
+                    <li><label><NavLink style={{textDecoration:"none"}} to="/categoria/6"><input type="checkbox" value="Rebook" /> Rebook</NavLink></label></li>
                 </ul>
 
             </div>

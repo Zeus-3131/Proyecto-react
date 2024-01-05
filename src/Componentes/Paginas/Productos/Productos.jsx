@@ -34,7 +34,7 @@ const Productos = () => {
           <Aside />
           <div className="contenedorDeProductos">
             <div>
-              <h3>header provisional</h3>
+              {/* <h3>header provisional</h3>
               <header>
                 <nav>
                   <ul>
@@ -45,7 +45,7 @@ const Productos = () => {
                     <NavLink to="/categoria/1">nike</NavLink>
                   </ul>
                 </nav>
-              </header>
+              </header> */}
             </div>
             <ItemListContainer mostrarComponentes={componentesDelItemListContainer} />
           </div>
