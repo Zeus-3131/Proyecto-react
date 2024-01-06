@@ -41,7 +41,7 @@ const Aside = () => {
     return (
         <aside className='contenedorAside'>
             <div className="filtro-seccion" data-target="en_stock">
-                <h3 className="seccion-titulo">Disponibilidad <span className="flecha"><i class="fa fa-angle-right" /></span></h3>
+                <h3 className="seccion-titulo">Disponibilidad <span className="flecha"><i className="fa fa-angle-right" /></span></h3>
                 <ul className="estilos-filtro">
                     <span className="limpiar-seccion" data-target="en_stock">Limpiar</span>
                     <li><label><input type="checkbox" value="en_stock" /> En stock</label></li>
@@ -51,7 +51,7 @@ const Aside = () => {
             </div>
 
             <div className="filtro-seccion" data-target="precio">
-                <h3 className="seccion-titulo">Marca <span className="flecha"><i class="fa fa-angle-right" /></span></h3>
+                <h3 className="seccion-titulo">Marca <span className="flecha"><i className="fa fa-angle-right" /></span></h3>
                 <ul className="estilos-filtro">
                     <span className="limpiar-seccion" data-target="precio">Limpiar</span>
                     <li><label><NavLink style={{textDecoration:"none"}} to="/categoria/1"><input type="checkbox" value="Nike" /> Nike</NavLink> </label></li>
@@ -65,7 +65,7 @@ const Aside = () => {
             </div>
 
             <div className="filtro-seccion" data-target="precio">
-                <h3 className="seccion-titulo">Precio <span className="flecha"><i class="fa fa-angle-right" /></span></h3>
+                <h3 className="seccion-titulo">Precio <span className="flecha"><i className="fa fa-angle-right" /></span></h3>
                 <ul className="estilos-filtro">
                     <span className="limpiar-seccion" data-target="precio">Limpiar</span>
                     <li><label><input type="checkbox" value="menos_50" /> Menos de $50</label></li>
@@ -75,7 +75,7 @@ const Aside = () => {
             </div>
 
             <div className="filtro-seccion" data-target="tipo_producto">
-                <h3 className="seccion-titulo">Tipo de Producto <span className="flecha"><i class="fa fa-angle-right" /></span></h3>
+                <h3 className="seccion-titulo">Tipo de Producto <span className="flecha"><i className="fa fa-angle-right" /></span></h3>
                 <ul className="estilos-filtro">
                     <span className="limpiar-seccion" data-target="tipo_producto">Limpiar</span>
                     <li><label><input type="checkbox" value="zapatillas" /> Zapatillas</label></li>
@@ -85,7 +85,7 @@ const Aside = () => {
             </div>
 
             <div className="filtro-seccion" data-target="color">
-                <h3 className="seccion-titulo">Color <span className="flecha"><i class="fa fa-angle-right" /></span></h3>
+                <h3 className="seccion-titulo">Color <span className="flecha"><i className="fa fa-angle-right" /></span></h3>
                 <ul className="estilos-filtro">
                     <span className="limpiar-seccion" data-target="color">Limpiar</span>
                     <li><label><input type="checkbox" value="rojo" /> Rojo</label></li>
@@ -97,7 +97,7 @@ const Aside = () => {
             </div>
 
             <div className="filtro-seccion" data-target="tamaño">
-                <h3 className="seccion-titulo">Tamaño <span className="flecha"><i class="fa fa-angle-right" /></span></h3>
+                <h3 className="seccion-titulo">Tamaño <span className="flecha"><i className="fa fa-angle-right" /></span></h3>
                 <ul className="estilos-filtro">
                     <span className="limpiar-seccion" data-target="tamaño">Limpiar</span>
                     <li><label><input type="checkbox" value="35" /> 35</label></li>

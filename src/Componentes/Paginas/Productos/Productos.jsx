@@ -21,7 +21,7 @@ const Productos = () => {
               Inicio
             </NavLink>
             <span>
-              <i class="fa fa-angle-right" />
+              <i className="fa fa-angle-right" />
             </span>
             <span>Calzado especial</span>
           </div>

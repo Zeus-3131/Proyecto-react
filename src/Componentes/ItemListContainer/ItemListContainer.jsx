@@ -2,7 +2,7 @@ import "./ItemListContainer.css";
 import { useState, useEffect } from "react";
 import { getProductos, getProductosPorCategoria } from "../../asyncmock";
 import ItemList from "../ItemList/ItemList";
-import { useParams, useLocation } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
 import Aside from "../Aditamentos/Aside/Aside";
 import Footer from "../Footer/Footer";
@@ -28,7 +28,7 @@ const ItemListContainer = ({ mostrarComponentes = true }) => {
         {mostrarComponentes && <Aside />}
         <div className="contenedorProductosItemListContainer">
           <h2 className="itemh2">mis productos</h2>
-          <ItemList style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "20px" }} productos={productos} />
+          <ItemList productos={productos} />
         </div>
       </div>
       {mostrarComponentes && <Footer />}

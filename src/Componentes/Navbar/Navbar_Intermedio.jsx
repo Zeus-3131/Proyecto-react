@@ -12,7 +12,7 @@ const Navbar_Intermedio = () => {
           <form className='contenedorBuscador' >
             <input className='buscador' type="search" placeholder="Buscar" />
             <button type="submit" className='botonBuscar'>
-              <i class="fa fa-search"></i>
+              <i className="fa fa-search"></i>
             </button>
           </form>
         </div>
