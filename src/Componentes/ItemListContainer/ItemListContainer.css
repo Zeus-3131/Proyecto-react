@@ -1,14 +1,16 @@
-.itemh2{
-    color: red;
-    text-align: center;
-    margin-top: 30px;
+.itemh2 {
+  color: red;
+  text-align: center;
+  margin-top: 30px;
 }
 
-.contenedorDivDelListContainer{
-    display: flex;
+.contenedorDivDelListContainer {
+  display: flex;
 }
 
-.contenedorProductosItemListContainer{
-    flex: 1;
-    padding: 20px;
+.contenedorProductosItemListContainer {
+  flex: 1;
+  padding: 20px;
 }
+
+

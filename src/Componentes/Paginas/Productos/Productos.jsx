@@ -33,20 +33,6 @@ const Productos = () => {
         <div className="contenedormainProductos">
           <Aside />
           <div className="contenedorDeProductos">
-            <div>
-              {/* <h3>header provisional</h3>
-              <header>
-                <nav>
-                  <ul>
-                    <NavLink to="/Productos">inicio</NavLink>
-                    <br />
-                    <NavLink to="/categoria/2">puma</NavLink>
-                    <br />
-                    <NavLink to="/categoria/1">nike</NavLink>
-                  </ul>
-                </nav>
-              </header> */}
-            </div>
             <ItemListContainer mostrarComponentes={componentesDelItemListContainer} />
           </div>
         </div>

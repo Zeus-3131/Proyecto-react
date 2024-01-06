@@ -1,58 +1,56 @@
 .ContenedorNavegacionProductos,
 .ladosMain {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .navProductos {
-    padding: 8px 0;
-    background: rgba(var(--color-foreground), .04);
-    margin: 20px 0;
-    border-radius: 10px;
+  padding: 8px 0;
+  background: rgba(var(--color-foreground), 0.04);
+  margin: 20px 0;
+  border-radius: 10px;
 
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
 }
 
 .col-12 {
-    flex: 0 0 100%;
-    max-width: 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
 }
 
 .enlaceP {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .fa {
-    font: normal normal normal 14px/1 FontAwesome;
-    padding-left: 5px;
-    padding-right: 5px;
+  font: normal normal normal 14px/1 FontAwesome;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .enlaceP:hover {
-    color: red;
+  color: red;
 }
 
 /* estilos del main  */
-.contenedormainProductos{
-    display: flex;
+.contenedormainProductos {
+  display: flex;
 }
 
 .h1Productos {
-    text-align: center;
-    margin-bottom: 10px;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .contenedorDeProductos {
-    /* flex: 0 0 75%;
-    max-width: 75%;
-    position: relative;
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px; */
-    flex: 1;
-    padding: 20px;
+  flex: 1;
+  padding: 20px;
+
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px;  */
 }

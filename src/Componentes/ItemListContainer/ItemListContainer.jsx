@@ -7,7 +7,7 @@ import Navbar from "../Navbar/Navbar";
 import Aside from "../Aditamentos/Aside/Aside";
 import Footer from "../Footer/Footer";
 
-const ItemListContainer = ({mostrarComponentes=true}) => {
+const ItemListContainer = ({ mostrarComponentes = true }) => {
   const [productos, setProductos] = useState([]);
   const { idCategoria } = useParams();
 
@@ -28,7 +28,7 @@ const ItemListContainer = ({mostrarComponentes=true}) => {
         {mostrarComponentes && <Aside />}
         <div className="contenedorProductosItemListContainer">
           <h2 className="itemh2">mis productos</h2>
-          <ItemList productos={productos} />
+          <ItemList style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "20px" }} productos={productos} />
         </div>
       </div>
       {mostrarComponentes && <Footer />}
