@@ -17,7 +17,7 @@ const Productos = () => {
       <div className="ContenedorNavegacionProductos">
         <nav className="navProductos">
           <div className="col-12">
-            <NavLink className="enlaceP" to="/">
+            <NavLink className="enlaceP" to="/"> 
               Inicio
             </NavLink>
             <span>

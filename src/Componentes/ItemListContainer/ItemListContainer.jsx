@@ -6,6 +6,7 @@ import { useParams } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
 import Aside from "../Aditamentos/Aside/Aside";
 import Footer from "../Footer/Footer";
+import { NavLink } from "react-router-dom";
 
 const ItemListContainer = ({ mostrarComponentes = true }) => {
   const [productos, setProductos] = useState([]);
@@ -24,6 +25,20 @@ const ItemListContainer = ({ mostrarComponentes = true }) => {
   return (
     <>
       {mostrarComponentes && <Navbar />}
+      {mostrarComponentes && <div className="ContenedorNavegacionContainer">
+        <nav className="navProductosContainer">
+          <div className="col-12Container">
+            <NavLink className="enlacePContainer" to="/">
+              Inicio
+            </NavLink>
+            <span>
+              <i className="faContainer fa-angle-right" />
+            </span>
+            <span>Calzado especial</span>
+          </div>
+        </nav>
+      </div>}
+
       <div className="contenedorDivDelListContainer">
         {mostrarComponentes && <Aside />}
         <div className="contenedorProductosItemListContainer">
