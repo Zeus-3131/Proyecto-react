@@ -1,11 +1,11 @@
-.ContenedorNavegacionTienda{
+.ContenedorNavegacionHombre{
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
   }
   
-  .navProductosTienda{
+  .navProductosHombre{
     padding: 8px 0;
     background: rgba(var(--color-foreground), 0.04);
     margin: 20px 0;
@@ -16,32 +16,32 @@
     list-style: none;
   }
   
-  .col-12Tienda{
+  .col-12Hombre{
     flex: 0 0 100%;
     max-width: 100%;
   }
   
-  .enlacePTienda{
+  .enlacePHombre{
     text-decoration: none;
   }
   
-  .faTienda {
+  .faHombre {
     font: normal normal normal 14px/1 FontAwesome;
     padding-left: 5px;
     padding-right: 5px;
   }
 
-  .itemh2Tienda {
+  .itemh2Hombre {
     color: red;
     text-align: center;
     /* margin-top: 10px; */
   }
   
-  .contenedorDivDelListTienda {
+  .contenedorDivDelListHombre {
     display: flex;
   }
   
-  .contenedorProductosItemListTienda {
+  .contenedorProductosItemListHombre {
     flex: 1;
     padding: 20px;
     justify-content: center;

@@ -311,3 +311,38 @@ body{
   .info2{
     margin-top: 30px;
   }
+
+
+  .enlaceInfoProduct{
+    display: block;
+    position: absolute;
+    /* top: 25%; */
+    left: 0;
+    right: 0;
+    text-align: center;
+    opacity: 0;
+    transition: .3s ease;
+  }
+
+  .iconoInfoProduct{
+    border: 1px solid transparent;
+    text-transform: capitalize;
+    background: #fff;
+    min-width: 48px;
+    min-height: 48px;
+    display: inline-block;
+    vertical-align: middle;
+    color: black;
+    text-align: center;
+    transition: .3s ease;
+    letter-spacing: .5px;
+    padding: 13px 5px;
+    margin: 6px 1px;
+    border-radius: 10px;
+    z-index: 999;
+  }
+
+
+
+
+

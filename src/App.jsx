@@ -8,12 +8,14 @@ import Productos from "./Componentes/Paginas/Productos/Productos";
 import Mujer from "./Componentes/Paginas/Mujer/Mujer";
 import Blogs from "./Componentes/Paginas/Blogs/Blogs";
 import ItemDetailContainer from "./Componentes/ItemDetailContainer/ItemDetailContainer";
+import { CarritoProvider } from "./Context/CarritoContext";
 
 
 function App() {
   return (
     <div>
       <BrowserRouter>
+      <CarritoProvider>
       <Routes>
         <Route path="/Tienda" element={<Tienda/>}/>
         <Route path="/Hombre" element={<Hombre/>}/>
@@ -27,7 +29,11 @@ function App() {
         <Route path="/Productos" element={<ItemListContainer/>}/>
         <Route path="/categoria/:idCategoria" element={<ItemListContainer/>}/>
         <Route path="/Item/:idItem" element={<ItemDetailContainer/>}/>
+
+        {/* rutas del carrito  */}
+        <Route path="/cart" element={<h1>pronto construcion del carrito</h1>}/>
       </Routes>
+      </CarritoProvider>
       </BrowserRouter>
 
     {/* <Navbar/> */}

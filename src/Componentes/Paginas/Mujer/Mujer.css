@@ -1,11 +1,11 @@
-.ContenedorNavegacionTienda{
+.ContenedorNavegacionMujer{
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
   }
   
-  .navProductosTienda{
+  .navProductosMujer{
     padding: 8px 0;
     background: rgba(var(--color-foreground), 0.04);
     margin: 20px 0;
@@ -16,32 +16,32 @@
     list-style: none;
   }
   
-  .col-12Tienda{
+  .col-12Mujer{
     flex: 0 0 100%;
     max-width: 100%;
   }
   
-  .enlacePTienda{
+  .enlacePMujer{
     text-decoration: none;
   }
   
-  .faTienda {
+  .faMujer {
     font: normal normal normal 14px/1 FontAwesome;
     padding-left: 5px;
     padding-right: 5px;
   }
 
-  .itemh2Tienda {
+  .itemh2Mujer {
     color: red;
     text-align: center;
     /* margin-top: 10px; */
   }
   
-  .contenedorDivDelListTienda {
+  .contenedorDivDelListMujer {
     display: flex;
   }
   
-  .contenedorProductosItemListTienda {
+  .contenedorProductosItemListMujer {
     flex: 1;
     padding: 20px;
     justify-content: center;
