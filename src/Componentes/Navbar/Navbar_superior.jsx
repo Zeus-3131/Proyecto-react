@@ -4,6 +4,7 @@ import CartWidget from '../Aditamentos/CartWidget/CartWidget.jsx';
 
 
 
+
 function Navbar_Superior() {
   return (
     <header>
@@ -17,7 +18,7 @@ function Navbar_Superior() {
         <div className='NavbarParrafo'>
           <p>FREE U.S. SHIPPING $98+ &nbsp;|&nbsp; FREE RETURNS &nbsp;|&nbsp; BEST PRICE GUARANTEED</p>
           </div>
-        <div className='NavbarCarrito'>
+        <div className='NavbarCarrito'> 
           <CartWidget/>
         </div>
       </div>

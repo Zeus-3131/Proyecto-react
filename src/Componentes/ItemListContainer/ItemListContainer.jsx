@@ -1,6 +1,7 @@
 import "./ItemListContainer.css";
 import { useState, useEffect } from "react";
-import { getProductos, getProductosPorCategoria } from "../../asyncmock";
+import { db } from "../../services/config";
+import {collection, getDocs, where, query} from "firebase/firestore"
 import ItemList from "../ItemList/ItemList";
 import { useParams } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
@@ -12,15 +13,19 @@ const ItemListContainer = ({ mostrarComponentes = true }) => {
   const [productos, setProductos] = useState([]);
   const { idCategoria } = useParams();
 
-  useEffect(() => {
-    const funcionProductos = idCategoria
-      ? getProductosPorCategoria
-      : getProductos;
+  useEffect(()=>{
+    const misProductos = idCategoria ? query(collection(db, "Inventario"), where("idcat", "==", idCategoria)): collection(db, "Inventario");
 
-    funcionProductos(idCategoria)
-      .then((respuesta) => setProductos(respuesta))
-      .catch((error) => console.error("Error al obtener productos:", error));
-  }, [idCategoria]);
+    getDocs(misProductos)
+     .then(res=>{
+      const nuevosProductos = res.docs.map(doc=>{
+        const data = doc.data();
+        return {id:doc.id, ...data}
+      })
+      setProductos(nuevosProductos);
+     })
+     .catch(error=> console.log("Error",error))
+  },[idCategoria])
 
   return (
     <>

@@ -5,21 +5,29 @@ import Footer from "../../Footer/Footer"
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 import ItemListTienda from "../../ItemListTienda/ItemListTienda"
-import { getProductos, getProductosPorCategoria } from "../../../asyncmock"
+import {collection, getDocs, where, query} from "firebase/firestore"
+import { db } from "../../../services/config";
+
+
+
 
 const Tienda = ({mostrarComponentesTienda = true}) => {
   const [productos, setProductos] = useState([]);
   const { idCategoria } = useParams();
 
-  useEffect(() => {
-    const funcionProductos = idCategoria
-      ? getProductosPorCategoria
-      : getProductos;
+  useEffect(()=>{
+    const misProductos = idCategoria ? query(collection(db, "Inventario"), where("idcat", "==", idCategoria)): collection(db, "Inventario");
 
-    funcionProductos(idCategoria)
-      .then((respuesta) => setProductos(respuesta))
-      .catch((error) => console.error("Error al obtener productos:", error));
-  }, [idCategoria]);
+    getDocs(misProductos)
+     .then(res=>{
+      const nuevosProductos = res.docs.map(doc=>{
+        const data = doc.data();
+        return {id:doc.id, ...data}
+      })
+      setProductos(nuevosProductos);
+     })
+     .catch(error=> console.log("Error",error))
+  },[idCategoria])
   return (
     <>
        {mostrarComponentesTienda && <Navbar />}
