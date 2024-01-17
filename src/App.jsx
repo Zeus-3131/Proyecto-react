@@ -9,6 +9,7 @@ import Mujer from "./Componentes/Paginas/Mujer/Mujer";
 import Blogs from "./Componentes/Paginas/Blogs/Blogs";
 import ItemDetailContainer from "./Componentes/ItemDetailContainer/ItemDetailContainer";
 import { CarritoProvider } from "./Context/CarritoContext";
+import Cart from "./Componentes/Aditamentos/Cart/Cart";
 
 
 function App() {
@@ -31,7 +32,7 @@ function App() {
         <Route path="/Item/:idItem" element={<ItemDetailContainer/>}/>
 
         {/* rutas del carrito  */}
-        <Route path="/cart" element={<h1>pronto construcion del carrito</h1>}/>
+        <Route path="/cart" element={<Cart/>}/>
       </Routes>
       </CarritoProvider>
       </BrowserRouter>

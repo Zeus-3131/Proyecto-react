@@ -1,5 +1,5 @@
 import "./ItemDetail.css";
-import "./ItemDetail.js";
+// import "./ItemDetail.js";
 import ItemCount from "../ItemCount/ItemCount.jsx";
 import { useState } from "react";
 import {Link} from "react-router-dom"
