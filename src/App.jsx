@@ -10,6 +10,7 @@ import Blogs from "./Componentes/Paginas/Blogs/Blogs";
 import ItemDetailContainer from "./Componentes/ItemDetailContainer/ItemDetailContainer";
 import { CarritoProvider } from "./Context/CarritoContext";
 import Cart from "./Componentes/Aditamentos/Cart/Cart";
+import Checkout from "./Componentes/Aditamentos/Checkout/Checkout";
 
 
 function App() {
@@ -33,6 +34,9 @@ function App() {
 
         {/* rutas del carrito  */}
         <Route path="/cart" element={<Cart/>}/>
+        <Route path="/checkout" element={<Checkout/>}/>
+
+
       </Routes>
       </CarritoProvider>
       </BrowserRouter>

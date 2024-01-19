@@ -1,7 +1,7 @@
 import "./Item.css";
 import {Link} from "react-router-dom"
 
-const Item = ({ id, nombre, precio, imagen, idCategoria }) => {
+const Item = ({ id, nombre, precio, imagen, idCategoria, stock }) => {
   let brandClass = '';
 
   switch (idCategoria) {
@@ -64,6 +64,7 @@ const Item = ({ id, nombre, precio, imagen, idCategoria }) => {
                       <div className="size contenInfo">
                         <h3>Precio : {precio}</h3>
                         <h3>Id : {id}</h3>
+                        {/* <h3>Stock:{stock}</h3> ajustar con css para que se visualice el stock sin descuadrar la tarjeta*/} 
                       </div>
                       {/* <a className="contenInfo" href="#">
                         Comprar Ahora
