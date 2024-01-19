@@ -4,10 +4,7 @@ Urban Feet es un proyecto de ecommerce básico desarrollado como parte del curso
 
 ## Tecnologías Utilizadas
 
-<img src="https://cdn.icon-icons.com/icons2/2415/PNG/512/react_original_wordmark_logo_icon_146375.png" width="100px">
-<img src="https://i0.wp.com/holamundo.io/wp-content/uploads/2023/01/vite.png?resize=640%2C640&ssl=1" width="100px">
-<img src="https://sahilthakur7blog.files.wordpress.com/2018/08/1_tkvltenqtkp1s-evb5hrvg2x.png" width="150px">
-<img src="https://i.pinimg.com/originals/c7/c2/e3/c7c2e3514a4f34cc2bbad0f999e7b6a7.png" width="200px">
+<img src="https://cdn.icon-icons.com/icons2/2415/PNG/512/react_original_wordmark_logo_icon_146375.png" width="100px"><img src="https://i0.wp.com/holamundo.io/wp-content/uploads/2023/01/vite.png?resize=640%2C640&ssl=1" width="100px" ><img src="https://sahilthakur7blog.files.wordpress.com/2018/08/1_tkvltenqtkp1s-evb5hrvg2x.png" width="150px"><img src="https://i.pinimg.com/originals/c7/c2/e3/c7c2e3514a4f34cc2bbad0f999e7b6a7.png" width="200px">
 
 
 - **React**: El núcleo de la interfaz de usuario, permitiendo una experiencia de usuario dinámica y eficiente.
