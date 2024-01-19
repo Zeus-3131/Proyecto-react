@@ -4,6 +4,7 @@ import { collection, setDoc, addDoc } from "firebase/firestore";
 
 // Supongamos que tienes un array de objetos con id y otros datos
 const datosParaSubir = [
+        { id: "1", nombre: "Air Max", precio: 300, stock:20, imagen: "https://static.nike.com/a/images/t_default/8e0d887b-6987-4030-b272-8194514be6a8/sabrina-1-family-bonds-zapatillas-de-baloncesto-KdPT3V.png", idcat: "1"},
         { id: "2", nombre: "React Infinity Run", precio: 400000, stock:20, imagen: "https://static.nike.com/a/images/t_default/4c413473-5aca-4850-9999-83bcaac522c3/calzado-air-max-sc-LR42xg.png", idcat: "1"},
         { id: "3", nombre: "Air Force 1", precio: 600000, stock:20, imagen: "https://static.nike.com/a/images/t_default/35db0f3d-f8be-488d-8abb-c07fcc7087af/calzado-de-running-en-carretera-extraancho-flex-experience-run-12-lTHLhP.png", idcat: "1"},
         { id: "4", nombre: "Future Rider", precio: 300000, stock:20, imagen: "https://content.stylitics.com/images/items/15039664?size=large", idcat: "2" },
@@ -23,19 +24,19 @@ const datosParaSubir = [
         { id: "18", nombre: "Nano X", precio: 500000, stock:20, imagen: "https://www.provesicsa.com/wp-content/uploads/2021/03/ZAPA46713.png", idcat: "6" },
 ];
 
-// const subirDatosAFirestore = async () => {
-//     try {
-//       const referenciaColeccion = collection(db, 'Inventario');
+const subirDatosAFirestore = async () => {
+    try {
+      const referenciaColeccion = collection(db, 'Inventario');
   
-//       // Utiliza addDoc para agregar documentos a la colección
-//       for (const dato of datosParaSubir) {
-//         await addDoc(referenciaColeccion, dato);
-//       }
+      // Utiliza addDoc para agregar documentos a la colección
+      for (const dato of datosParaSubir) {
+        await addDoc(referenciaColeccion, dato);
+      }
   
-//       console.log('Datos subidos exitosamente a Firestore');
-//     } catch (error) {
-//       console.error('Error al subir datos a Firestore:', error);
-//     }
-//   };
+      console.log('Datos subidos exitosamente a Firestore');
+    } catch (error) {
+      console.error('Error al subir datos a Firestore:', error);
+    }
+  };
   
-//   subirDatosAFirestore();
+  subirDatosAFirestore();
