@@ -27,10 +27,10 @@ Urban Feet es un proyecto de ecommerce básico desarrollado como parte del curso
 
 ### Instalación
 
-- ** Clona el repositorio en tu máquina local.
-- ** Abre una terminal en el directorio del proyecto.
-- ** Ejecuta `npm install` para descargar los módulos y dependencias.
-- ** Ejecuta `npm run dev` para visualizar el proyecto.
+-  Clona el repositorio en tu máquina local.
+-  Abre una terminal en el directorio del proyecto.
+-  Ejecuta `npm install` para descargar los módulos y dependencias.
+-  Ejecuta `npm run dev` para visualizar el proyecto.
 
 ## Licencia
 
