@@ -9,13 +9,16 @@ const Cart = () => {
     useContext(CarritoContext);
 
   if (cantidadTotal === 0) {
-    return (
-      <>
-        <h2>No hay productos en el carrito. compra o vete</h2>
-        <Link to="/">ver productos</Link>
-      </>
-    );
+    const confirmar = window.confirm("No hay productos en el carrito. ¿Deseas ver productos?");
+    
+    if (confirmar) {
+      // Si el usuario hace clic en "Aceptar", redirige a la página de productos
+      window.location.href = "/Productos";
+    }
+    // No es necesario manejar la otra opción, ya que si el usuario hace clic en "Cancelar" o cierra el cuadro de diálogo, no hacemos nada.
   }
+  
+  
   return (
     <div>
     <Navbar/>

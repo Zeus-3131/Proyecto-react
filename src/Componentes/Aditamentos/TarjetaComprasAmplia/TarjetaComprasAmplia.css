@@ -68,7 +68,7 @@ body {
 }
 
 .container1 .card::after {
-  content: var(--brand-name);
+  content: "Puma";
   position: absolute;
   top: 50%;
   left: auto;
@@ -82,7 +82,7 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 1000;
+  z-index: 10;
   width: 100%;
   height: 220px;
   transition: 0.5s;
@@ -208,7 +208,7 @@ body {
   padding: 7px 20px;
   background: var(--card-primary-color);
   border-radius: 8px;
-  margin-top: 10px;
+  margin-top: -5px;
   font-weight: 600;
   color: #111;
   opacity: 0%;

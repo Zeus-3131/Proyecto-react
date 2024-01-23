@@ -4,7 +4,7 @@ import {Link} from "react-router-dom"
 const Item = ({ id, nombre, precio, imagen, idCategoria, stock }) => {
   let brandClass = '';
 
-  switch (idCategoria) {
+  switch (idCategoria) { 
     case '1':
       brandClass = 'nikeStyle';
       break;

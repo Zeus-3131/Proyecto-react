@@ -6,7 +6,7 @@ import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 import ItemListTienda from "../../ItemListTienda/ItemListTienda"
 import {collection, getDocs, where, query} from "firebase/firestore"
-import { db } from "../../../services/config";
+import { db } from "../../../services/config"; 
 
 
 

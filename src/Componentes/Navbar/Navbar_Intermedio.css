@@ -9,9 +9,10 @@
 
 .contenedorNavbarIntermedio{
     height: 120px;
-    background: rgb(154, 158, 163, .2 );
+    /* background: rgb(154, 158, 163, .2 ); */
     /* background-color: gray; */
     /* background: transparent; */
+    background-image: url(../../../public/fondoDeportivo.jpg);
    
    
 }

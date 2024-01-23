@@ -1,6 +1,7 @@
 import "./TarjetaCompra.css";
+import { Link } from "react-router-dom";
 
-const TarjetaCompra = ({ imagen, titulo }) => {
+const TarjetaCompra = ({ id, nombre, precio, imagen, info }) => {
   return (
     <div className="contenedorTarjeta">
       <div>
@@ -11,10 +12,10 @@ const TarjetaCompra = ({ imagen, titulo }) => {
                 <div className="container">
                   <div className="card">
                     <div className="imgBx">
-                      <img src={imagen} alt={titulo} />
+                      <img src={imagen} alt={nombre} />
                     </div>
                     <div className="contentBx">
-                      <h2>{titulo}</h2>
+                      <h2>{nombre}</h2>
                       <div className="size contenInfo info2">
                         <h3>Size :</h3>
                         <span>7</span>
@@ -29,11 +30,12 @@ const TarjetaCompra = ({ imagen, titulo }) => {
                         <span></span>
                       </div>
                       <div className="size contenInfo">
-                        <h3>Precio : 6544</h3>
+                        <h3>Precio : {precio}</h3>
+                        <h3>Id : {id}</h3>
                       </div>
-                      <a className="contenInfo" href="#">
-                        Buy Now
-                      </a>
+                      <Link to={info}>
+                        Comprar Ahora
+                      </Link>
                     </div>
                   </div>
                 </div>
