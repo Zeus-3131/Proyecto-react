@@ -10,6 +10,16 @@
     padding-left: 15px;
 }
 
+
+
+.ubicarLidelAside input{
+    margin: 3px 10px 0 0;
+}
+
+.ubicarLidelAside label{
+    text-align: left;
+}
+
 .filtro-productos {
     border: 1px solid #ccc;
     padding: 15px;
@@ -53,7 +63,9 @@
 .estilos-filtro li{
     display: flex;
     align-items: flex-start;
+    width: 5%;
 }
+
 
 .filtro-seccion.active .flecha {
     transform: rotate(90deg);
