@@ -4,7 +4,6 @@ import "./CartItem.css";
 
 const CartItem = ({item,cantidad}) => {
     const{eliminarProducto}=useContext(CarritoContext);
-    // const{cantidadTotal}=useContext(CarritoContext);
 
   return (
     <div className="contenedorCartItem">
@@ -12,7 +11,6 @@ const CartItem = ({item,cantidad}) => {
         <p className="CartItemP">cantidad:{cantidad}</p>
         <p className="CartItemP">precio: {item.precio}</p>
         <button className="CartItemButton" onClick={()=>eliminarProducto(item.id)}>Eliminar</button>
-        {/* <hr /> */}
     </div>
   )
   

@@ -7,7 +7,7 @@ import Navbar from "../../Navbar/Navbar";
 import Footer from "../../Footer/Footer";
 
 const Cart = () => {
-  const { carrito, vaciarCarrito, total, cantidadTotal } = useContext(CarritoContext);
+  const { carrito, vaciarCarrito, total, cantidadTotal, eliminarProducto } = useContext(CarritoContext);
   const [mostrarBotonFinalizar, setMostrarBotonFinalizar] = useState(true);
 
   useEffect(() => {

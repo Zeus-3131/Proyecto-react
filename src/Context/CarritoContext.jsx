@@ -36,14 +36,40 @@ export const CarritoProvider = ({children}) => {
     }
   };
 
+  // const eliminarProducto = (id) => {
+  //   const productoEliminado = carrito.find((prod) => prod.item.id === id);
+  //   const carritoActualizado = carrito.filter((prod) => prod.item.id !== id);
+
+  //   setCarrito(carritoActualizado);
+  //   setCantidadTotal((prev = prev - productoEliminado.cantidad));
+  //   setTotal(prev => prev - (productoEliminado.item.precio * productoEliminado.cantidad));
+  // };
+
+  // const eliminarProducto = (id) => {
+  //   const productoEliminado = carrito.find((prod) => prod.item.id === id);
+  //   const carritoActualizado = carrito.filter((prod) => prod.item.id !== id);
+  
+  //   setCarrito(carritoActualizado);
+  //   setCantidadTotal((prev) => prev - productoEliminado.cantidad);
+  //   setTotal((prev) => prev - productoEliminado.item.precio * productoEliminado.cantidad);
+  // };
+
   const eliminarProducto = (id) => {
     const productoEliminado = carrito.find((prod) => prod.item.id === id);
     const carritoActualizado = carrito.filter((prod) => prod.item.id !== id);
-
+  
     setCarrito(carritoActualizado);
-    setCantidadTotal((prev = prev - productoEliminado.cantidad));
-    setTotal(prev => prev - (productoEliminado.item.precio * productoEliminado.cantidad));
+    setCantidadTotal((prev) => prev - productoEliminado.cantidad);
+    setTotal((prev) => prev - productoEliminado.item.precio * productoEliminado.cantidad);
+  
+    // Ahora total ha sido actualizado, puedes acceder al valor actualizado aquí
+    const nuevoTotal = prev - productoEliminado.item.precio * productoEliminado.cantidad;
+  
+    // También puedes actualizar alguna referencia directa al DOM aquí, si es necesario
+    document.getElementById('total').innerText = nuevoTotal;
   };
+  
+  
 
 
   const vaciarCarrito =()=>{
