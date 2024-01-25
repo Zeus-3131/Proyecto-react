@@ -16,7 +16,7 @@ function Navbar_Superior() {
           </ul>
         </div>
         <div className='NavbarParrafo'>
-          <p>FREE U.S. SHIPPING $98+ &nbsp;|&nbsp; FREE RETURNS &nbsp;|&nbsp; BEST PRICE GUARANTEED</p>
+          <p>ENVÍO GRATUITO  &nbsp;|&nbsp; DEVOLUCIONES GRATIS &nbsp;|&nbsp; MEJOR PRECIO GARANTIZADO</p>
           </div>
         <div className='NavbarCarrito'> 
           <CartWidget/>

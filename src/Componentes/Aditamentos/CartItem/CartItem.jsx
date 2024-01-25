@@ -1,24 +1,18 @@
 import { useContext } from "react"
 import { CarritoContext } from "../../../Context/CarritoContext"
-
-
-
-// prueba icono 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCartArrowDown } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
+import "./CartItem.css";
 
 const CartItem = ({item,cantidad}) => {
     const{eliminarProducto}=useContext(CarritoContext);
     // const{cantidadTotal}=useContext(CarritoContext);
 
   return (
-    <div>
-        <h4>{item.nombre}</h4>
-        <p>cantidad:{cantidad}</p>
-        <p>precio: {item.precio}</p>
-        <button onClick={()=>eliminarProducto(item.id)}>eliminar producto</button>
-        <hr />
+    <div className="contenedorCartItem">
+        <h3>{item.nombre}</h3>
+        <p className="CartItemP">cantidad:{cantidad}</p>
+        <p className="CartItemP">precio: {item.precio}</p>
+        <button className="CartItemButton" onClick={()=>eliminarProducto(item.id)}>Eliminar</button>
+        {/* <hr /> */}
     </div>
   )
   
