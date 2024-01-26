@@ -88,39 +88,6 @@ const Checkout = () => {
 
   return (
     <div>
-      {/* <h3>Checkout</h3>
-        <form onSubmit={manejadorSubmit}>
-            {
-                carrito.map(producto=>(
-                    <div key={producto.item.id}>
-                        <p>{producto.item.nombre}x{producto.cantidad}</p>
-                        <p>Precio: $ {producto.item.precio}</p>
-                        <hr />
-                    </div>
-                ))
-            }
-            <hr />
-
-            <div>
-                <label htmlFor="">Nombre</label>
-                <input type="text" onChange={(e)=>setNombre(e.target.value)} />
-            </div>
-            <div>
-                <label htmlFor="">Apellido</label>
-                <input type="text" onChange={(e)=>setApellido(e.target.value)} />
-            </div>
-            <div>
-                <label htmlFor="">Telefono</label>
-                <input type="text" onChange={(e)=>setTelefono(e.target.value)}/>
-            </div>
-            <div>
-                <label htmlFor="">Email</label>
-                <input type="email" onChange={(e)=>setEmail(e.target.value)}/>
-            </div>
-            <div>
-                <label htmlFor="">Email Confirmación</label>
-                <input type="email" onChange={(e)=>setEmailConfirmacion(e.target.value)}/>
-            </div> */}
       <Navbar />
 
       <div class="main-container">
@@ -239,11 +206,11 @@ const Checkout = () => {
               </div>
               <div class="registration-image">
                 <figure>
-                  <img src="images/signup-image.jpg" alt="registration image" />
+                  <img src="../../../compra.svg" alt="imagen relacionada con la compra" />
                 </figure>
-                <a href="#" class="registration-image-link">
+                {/* <a href="#" class="registration-image-link">
                   I am already a member
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
