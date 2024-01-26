@@ -206,7 +206,7 @@ const Checkout = () => {
               </div>
               <div class="registration-image">
                 <figure>
-                  <img src="../../../compra.svg" alt="imagen relacionada con la compra" />
+                  <img src="../../../Imagenes/compra.svg" alt="imagen relacionada con la compra" />
                 </figure>
                 {/* <a href="#" class="registration-image-link">
                   I am already a member

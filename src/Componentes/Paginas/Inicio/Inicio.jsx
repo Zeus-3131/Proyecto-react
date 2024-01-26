@@ -221,34 +221,34 @@ const Inicio = () => {
         <div className="slideshow-container">
           <div className="images">
             <div className="image">
-              <img src="./reebok.png" alt="Imagen 1" />
+              <img src="./Imagenes/reebok.png" alt="Imagen 1" />
             </div>
             <div className="image">
-              <img src="./adidas.png" alt="Imagen 2" />
+              <img src="./Imagenes/adidas.png" alt="Imagen 2" />
             </div>
             <div className="image">
-              <img src="./puma.png" />
+              <img src="./Imagenes/puma.png" />
             </div>
             <div className="image">
-              <img src="./jordan.png" />
+              <img src="./Imagenes/jordan.png" />
             </div>
             <div className="image">
-              <img src="./converse.png" />
+              <img src="./Imagenes/converse.png" />
             </div>
             <div className="image">
-              <img src="./le.png" />
+              <img src="./Imagenes/le.png" />
             </div>
             <div className="image">
-              <img src="./balance.png" />
+              <img src="./Imagenes/balance.png" />
             </div>
             <div className="image">
-              <img src="./skech.png" />
+              <img src="./Imagenes/skech.png" />
             </div>
             <div className="image">
-              <img src="./nike.png" />
+              <img src="./Imagenes/nike.png" />
             </div>
             <div className="image">
-              <img src="./lacos.png" />
+              <img src="./Imagenes/lacos.png" />
             </div>
           </div>
         </div>

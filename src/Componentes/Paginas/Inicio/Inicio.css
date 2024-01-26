@@ -1,6 +1,6 @@
 .contenedorSection1 {
   /* background-color: lightgray; */
-  background-image: url("../../../../public/fondoSeccion1.jpg");
+  background-image: url("../../../../Imagenes/fondoSeccion1.jpg");
   display: flex;
   justify-content: center;
   align-content: space-between;
