@@ -90,7 +90,7 @@ const Aside = () => {
           <li className="ubicarLidelAside">
             <NavLink style={{ textDecoration: "none" }} to="/categoria/3">
               <input type="checkbox" value="Conver" />
-            </NavLink>
+            </NavLink> 
             <label>Conver</label>
           </li>
           <li className="ubicarLidelAside">

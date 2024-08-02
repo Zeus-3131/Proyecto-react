@@ -35,7 +35,7 @@ function App() {
         {/* rutas del carrito  */}
         <Route path="/cart" element={<Cart/>}/>
         <Route path="/checkout" element={<Checkout/>}/>
-
+ 
 
       </Routes>
       </CarritoProvider>
